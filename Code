@@ -1,1 +1,233 @@
-gegege
+namespace Piano
+{
+    class program
+    {
+        static int[] DO = new int[] {131, 262, 523, 1046};
+        static int[] RE = new int[] {147, 294, 587, 1174};
+        static int[] MI = new int[] {165, 330, 659, 1318};
+        static int[] FA = new int[] {175, 349, 698, 1396};
+        static int[] SO = new int[] {196, 392, 784, 1568};
+        static int[] LA = new int[] {220, 440, 880, 1760};
+        static int[] SI = new int[] {247, 494, 988, 1976};
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Piano");
+            Console.WriteLine("Controls: qwertyu. Change of tone: 1,2,3,4,5.");
+            Console.WriteLine("To change tone, you must press '.' on the keyboard.");
+            Console.WriteLine("To Exit you must press Esc, if you've changed the tone, you must press '.' before doing so.");
+            char key = '1';
+            Console.WriteLine("Would you like to Change tone?");
+            while (key != ((char)ConsoleKey.Escape))
+            {
+
+                key = Console.ReadKey(true).KeyChar;
+                Console.WriteLine(key);
+                switch (key)
+                {
+                    case '1':
+                        while (key != '.')
+                        {
+                            key = Console.ReadKey(true).KeyChar;
+                            switch (key)
+                            {
+                                case 'q':
+                                    Console.Beep(DO[0], 200);
+                                    break;
+                                case 'w':
+                                    Console.Beep(RE[0], 200);
+                                    break;
+                                case 'e':
+                                    Console.Beep(MI[0], 200);
+                                    break;
+                                case 'r':
+                                    Console.Beep(FA[0], 200);
+                                    break;
+                                case 't':
+                                    Console.Beep(SO[0], 200);
+                                    break;
+                                case 'y':
+                                    Console.Beep(LA[0], 200);
+                                    break;
+                                case 'u':
+                                    Console.Beep(SI[0], 200);
+                                    break;
+                            }
+                        }
+                        break;
+                    case '2':
+                        while (key != '.')
+                        {
+                            key = Console.ReadKey(true).KeyChar;
+                            switch (key)
+                            {
+                                case 'q':
+                                    Console.Beep(DO[1], 200);
+                                    break;
+                                case 'w':
+                                    Console.Beep(RE[1], 200);
+                                    break;
+                                case 'e':
+                                    Console.Beep(MI[1], 200);
+                                    break;
+                                case 'r':
+                                    Console.Beep(FA[1], 200);
+                                    break;
+                                case 't':
+                                    Console.Beep(SO[1], 200);
+                                    break;
+                                case 'y':
+                                    Console.Beep(LA[1], 200);
+                                    break;
+                                case 'u':
+                                    Console.Beep(SI[1], 200);
+                                    break;
+                            }
+                        }
+                        break;
+
+                    case '3':
+                        while (key != '.')
+                        {
+                            key = Console.ReadKey(true).KeyChar;
+                            switch (key)
+                            {
+                                case 'q':
+                                    Console.Beep(DO[2], 200);
+                                    break;
+                                case 'w':
+                                    Console.Beep(RE[2], 200);
+                                    break;
+                                case 'e':
+                                    Console.Beep(MI[2], 200);
+                                    break;
+                                case 'r':
+                                    Console.Beep(FA[2], 200);
+                                    break;
+                                case 't':
+                                    Console.Beep(SO[2], 200);
+                                    break;
+                                case 'y':
+                                    Console.Beep(LA[2], 200);
+                                    break;
+                                case 'u':
+                                    Console.Beep(SI[2], 200);
+                                    break;
+                            }
+                        }
+                        break;
+
+                    case '4':
+                        while (key != '.')
+                        {
+                            key = Console.ReadKey(true).KeyChar;
+                            switch (key)
+                            {
+                                case 'q':
+                                    Console.Beep(DO[3], 200);
+                                    break;
+                                case 'w':
+                                    Console.Beep(RE[3], 200);
+                                    break;
+                                case 'e':
+                                    Console.Beep(MI[3], 200);
+                                    break;
+                                case 'r':
+                                    Console.Beep(FA[3], 200);
+                                    break;
+                                case 't':
+                                    Console.Beep(SO[3], 200);
+                                    break;
+                                case 'y':
+                                    Console.Beep(LA[3], 200);
+                                    break;
+                                case 'u':
+                                    Console.Beep(SI[3], 200);
+                                    break;
+                            }
+                        }
+                        break;
+
+                    case '5':
+                        Console.WriteLine("In this mode, you can use and 1st, 2nd and 3rd tones at the same time.");
+                        Console.WriteLine("'asdfghj' and 'zxcvbnm' are now added to your controls!");
+                        while (key != '.')
+                        {
+                            key = Console.ReadKey(true).KeyChar;
+                            switch (key)
+                            {
+                                case 'q':
+                                    Console.Beep(DO[0], 200);
+                                    break;
+                                case 'w':
+                                    Console.Beep(RE[0], 200);
+                                    break;
+                                case 'e':
+                                    Console.Beep(MI[0], 200);
+                                    break;
+                                case 'r':
+                                    Console.Beep(FA[0], 200);
+                                    break;
+                                case 't':
+                                    Console.Beep(SO[0], 200);
+                                    break;
+                                case 'y':
+                                    Console.Beep(LA[0], 200);
+                                    break;
+                                case 'u':
+                                    Console.Beep(SI[0], 200);
+                                    break;
+                                case 'a':
+                                    Console.Beep(DO[1], 200);
+                                    break;
+                                case 's':
+                                    Console.Beep(RE[1], 200);
+                                    break;
+                                case 'd':
+                                    Console.Beep(MI[1], 200);
+                                    break;
+                                case 'f':
+                                    Console.Beep(FA[1], 200);
+                                    break;
+                                case 'g':
+                                    Console.Beep(SO[1], 200);
+                                    break;
+                                case 'h':
+                                    Console.Beep(LA[1], 200);
+                                    break;
+                                case 'j':
+                                    Console.Beep(SI[1], 200);
+                                    break;
+                                case 'z':
+                                    Console.Beep(DO[2], 200);
+                                    break;
+                                case 'x':
+                                    Console.Beep(RE[2], 200);
+                                    break;
+                                case 'c':
+                                    Console.Beep(MI[2], 200);
+                                    break;
+                                case 'v':
+                                    Console.Beep(FA[2], 200);
+                                    break;
+                                case 'b':
+                                    Console.Beep(SO[2], 200);
+                                    break;
+                                case 'n':
+                                    Console.Beep(LA[2], 200);
+                                    break;
+                                case 'm':
+                                    Console.Beep(SI[2], 200);
+                                    break;
+                            }
+                        }
+                        break;
+                }
+            }
+
+        }
+
+
+
+    }
+}
